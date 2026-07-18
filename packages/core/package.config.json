@@ -1,0 +1,9 @@
+{
+    "name": "@genome/core",
+    "description": "Core component system of genome framework.",
+    "version": "1.0.0",
+    "dependencies": {
+        "@genome/context": "workspace:*",
+        "@genome/dom-contracts": "workspace:*"
+    }
+}

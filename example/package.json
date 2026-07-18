@@ -1,0 +1,21 @@
+{
+    "name": "example-app",
+    "description": "Example app using genome rendering system.",
+    "version": "0.0.0",
+    "author": "geod-dev",
+    "license": "MIT",
+    "scripts": {
+        "build": "esbuild src/main.ts --bundle --outfile=./dist/script.js --format=esm --target=es2022",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "esbuild": "^0.28.1",
+        "tsc-alias": "^1.9.1",
+        "typescript": "^6.0.3"
+    },
+    "dependencies": {
+        "@genome/core": "workspace:*",
+        "@genome/dom": "workspace:*",
+        "@genome/state": "workspace:*"
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "name": "@genome/state-contracts",
+    "description": "Contracts for State component of genome framework.",
+    "version": "1.0.0"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "@genome/state",
+    "description": "State system of genome framework.",
+    "version": "1.0.0",
+    "dependencies": {
+        "@genome/state-contracts": "workspace:*"
+    }
+}

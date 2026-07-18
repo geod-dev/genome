@@ -1,0 +1,10 @@
+{
+    "name": "@genome/dom",
+    "description": "DOM rendering system of genome framework.",
+    "version": "1.0.0",
+    "dependencies": {
+        "@genome/context": "workspace:*",
+        "@genome/state-contracts": "workspace:*",
+        "@genome/dom-contracts": "workspace:*"
+    }
+}

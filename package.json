@@ -1,0 +1,12 @@
+{
+    "name": "genome",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "generate-packages": "node ./scripts/generate-packages.mjs",
+        "sync-shared-files": "node ./scripts/sync-shared-files.mjs",
+        "preinstall": "node ./scripts/generate-packages.mjs && node ./scripts/sync-shared-files.mjs"
+    }
+}
