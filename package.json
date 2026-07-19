@@ -6,6 +6,8 @@
     ],
     "scripts": {
         "generate-shared": "node ./scripts/generate-shared.mjs",
-        "preinstall": "node ./scripts/generate-shared.mjs"
+        "preinstall": "pnpm generate-shared",
+        "test": "pnpm -r test",
+        "build": "pnpm -r build"
     }
 }

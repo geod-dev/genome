@@ -1,9 +1,0 @@
-{
-    "include": ["tests"],
-    "compilerOptions": {
-        "paths": {
-            "@/*": ["./src/*"],
-            "@tests/*": ["./tests/*"]
-        }
-    }
-}

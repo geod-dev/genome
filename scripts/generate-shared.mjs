@@ -55,23 +55,9 @@ async function collectFiles(sources) {
         for (const entry of entries) {
             if (entry.isDirectory()) continue;
             if (entry.name === "package.json") continue;
-            const filePath = path.join(source, entry.name);
-
-            if (files.has(entry.name)) {
-                throw new Error(
-                    [
-                        `Cannot merge file "${entry.name}".`,
-                        "",
-                        "Found multiple sources:",
-                        `- ${files.get(entry.name).source}`,
-                        `- ${filePath}`,
-                    ].join("\n"),
-                );
-            }
-
             files.set(entry.name, {
                 name: entry.name,
-                source: filePath,
+                source: path.join(source, entry.name),
             });
         }
     }
