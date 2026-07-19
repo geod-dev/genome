@@ -1,31 +1,39 @@
 {
-    "name": "@genome/dom-contracts",
-    "description": "Contracts for Dom component of genome framework.",
-    "version": "1.0.0",
-    "dependencies": {
-        "@genome/context": "workspace:*"
-    },
-    "type": "module",
-    "author": "geod-dev",
-    "license": "MIT",
-    "scripts": {
-        "build": "tsc && tsc-alias",
-        "check": "tsc --noEmit"
-    },
-    "devDependencies": {
-        "typescript": "^6.0.3",
-        "tsc-alias": "^1.9.1"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "files": [
-        "dist"
-    ],
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "default": "./dist/index.js"
-        }
+  "_generated": {
+    "message": "This file is auto-generated. Do not edit it directly.",
+    "command": "pnpm generate-shared",
+    "sources": [
+      "packages/dom-contracts/package.config.json",
+      "shared/base/package.json"
+    ]
+  },
+  "name": "@genome/dom-contracts",
+  "description": "Contracts for Dom component of genome framework.",
+  "version": "1.0.0",
+  "dependencies": {
+    "@genome/context": "workspace:*"
+  },
+  "type": "module",
+  "author": "geod-dev",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "tsc-alias": "^1.9.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
+  }
 }
